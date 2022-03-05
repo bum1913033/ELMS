@@ -314,4 +314,8 @@ td {
     border-top: 2px solid #000 !important;
     margin-bottom: 0px !important;
 }
+
+.nav-item i{
+    margin-left:5px !important;
+}
 /*hello*/

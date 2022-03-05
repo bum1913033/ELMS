@@ -13,7 +13,7 @@
             <div class="navbar-nav ms-auto">
 
                 <a class="nav-item nav-link active" href="${pageContext.request.contextPath}/employee">
-                    cancel <i class="fal fa-window-close"></i>
+                    Cancel <i class="fal fa-window-close"></i>
                 </a>
 
             </div>
@@ -47,7 +47,7 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="faculty">faculty: </label>
+                <label for="faculty">Faculty: </label>
             </div>
             <div class="col-75">
                 <input id="faculty" name="faculty" placeholder="Faculty" required type="text" value="<c:out value='${employee.faculty}'/>"/>
@@ -56,10 +56,10 @@
 
         <div class="row">
             <div class="col-25">
-                <label for="absence">Absence: </label>
+                <label for="absence">Leaves: </label>
             </div>
             <div class="col-75">
-                <input id="absence" name="absence" placeholder="Availabe Leave Days" required type="text"
+                <input id="absence" name="absence" placeholder="Remaining Leave Days" required type="text"
                        value="<c:out value='${employee.absence}'/>"/>
             </div>
         </div>

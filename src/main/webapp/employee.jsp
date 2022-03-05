@@ -16,16 +16,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
 
-                <a class="nav-item nav-link active" href="${pageContext.request.contextPath}/employee">
-                    list
-                </a>
-
                 <a class="nav-item nav-link active" href="${pageContext.request.contextPath}/employee-save">
-                    add  <i class="fas fa-plus" style="color: white"></i>
+                    Add  <i class="fas fa-plus" style="color: white"></i>
                 </a>
 
                 <a class="nav-item nav-link active" href="${pageContext.request.contextPath}/logout">
-                    logout <i class="far fa-sign-out"></i>
+                    Logout <i class="far fa-sign-out"></i>
                 </a>
 
             </div>
@@ -44,7 +40,7 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Faculty</th>
-            <th scope="col">Absence</th>
+            <th scope="col">Remaining Leaves</th>
             <th scope="col">Actions</th>
         </tr>
         </thead>
