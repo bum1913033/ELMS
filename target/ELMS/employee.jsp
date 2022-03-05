@@ -1,6 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="components/header.jsp"%>
 
+<c:if test="${firstName==null}">
+    <c:redirect url="/login" />
+</c:if>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <span class="navbar-brand mb-0 h1">ELMS</span>

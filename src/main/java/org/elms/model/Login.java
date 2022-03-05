@@ -6,18 +6,16 @@ public class Login {
     private String userName;
     private String password;
     private String firstName;
-    private String lastName;
 
     public Login(){
 
     }
 
-    public Login(int id, String userName, String password, String firstName, String lastName) {
+    public Login(int id, String userName, String password, String firstName) {
         this.id = id;
         this.userName = userName;
         this.password = password;
         this.firstName = firstName;
-        this.lastName = lastName;
     }
 
     public int getId() {
@@ -52,14 +50,6 @@ public class Login {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     @Override
     public String toString(){
         return "Login{" +
@@ -67,7 +57,6 @@ public class Login {
                 +", userName='" + userName + '\''
                 +", password='"+ password + '\''
                 +", firstName='"+ firstName + '\''
-                +", lastName='"+ lastName+ '\''
                 +'}';
     }
 

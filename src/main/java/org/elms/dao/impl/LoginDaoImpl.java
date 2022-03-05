@@ -28,7 +28,7 @@ public class LoginDaoImpl implements LoginDao {
 
             Login user = new Login();
             while(resultSet.next()){
-//                user.setFirstName(resultSet.getString("firstName"));
+                user.setFirstName(resultSet.getString("firstName"));
 //                user.setLastName(resultSet.getString("lastName"));
                 return user;
             }

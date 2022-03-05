@@ -34,6 +34,8 @@ public class LoginFormController extends HttpServlet {
         Login user = loginDao.validate(login);
 
         if(user!=null){
+            session.setAttribute("firstName" , user.getFirstName());
+            System.out.println(user.getFirstName());
             resp.sendRedirect("/ELMS/employee");
         } else {
             req.setAttribute("error-message" , "Sorry, you are not registered.");
