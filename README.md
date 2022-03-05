@@ -2,4 +2,5 @@
 
 Database:
   - Create db 'elms'
-  - import sql file from 'SQL Import' folder. (contains two tables: employee and user)
+  - Create 'user' table (id, firstName, userName, password)
+  - Create 'employee' table (id, firstName, lastName, faculty, absence)
