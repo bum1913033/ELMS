@@ -24,8 +24,10 @@ public class EmployeeFormController extends HttpServlet {
                 Employee employee = employeeDao.findOne(Integer.parseInt(id));
                 request.setAttribute("employee", employee);
                 request.setAttribute("action", "Update");
+                request.setAttribute("form-heading" , "Update Employee");
             } else {
                 request.setAttribute("action", "Save");
+                request.setAttribute("form-heading" , "Add Employee");
             }
         } catch (SQLException | ClassNotFoundException ex) {
             System.out.println(ex.getMessage());

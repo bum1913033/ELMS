@@ -33,7 +33,10 @@
     </div>
 </nav>
 
-<div class="table-responsive">
+<div class="table-responsive list-table">
+    <div class="w-100 text-center">
+        <p class="emp-text">Employee Table</p>
+    </div>
     <table class="table table-hover">
         <thead class="table-light">
         <tr>
